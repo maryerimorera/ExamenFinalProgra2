@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="InicioMaster.master.cs" Inherits="ExamenFinal.InicioMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" href="C:\Users\mmorera\source\repos\ExamenFinal\ExamenFinal\Css\Menu.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            left: -8px;
+            top: 158px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="auto-style1">
+
+                <asp:HyperLink ID="Lusuarios" runat="server" NavigateUrl="InicioAdmin.aspx" Text="USUARIOS" />
+                <asp:HyperLink ID="Lplacas" runat="server" NavigateUrl="Cliente.aspx" Text="PLACAS" />
+                <asp:HyperLink ID="Lreportes" runat="server" NavigateUrl="Facturacion.aspx" Text="REPORTES" />
+                <asp:HyperLink ID="Lsalir" runat="server" NavigateUrl="Login.aspx" Text="SALIR" />
+                <div class="animation start-home"></div>
+            </nav>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+             
+                    <p class="auto-style2">
+                        <span lang="EN-US">Sistema de Vehiculos<o:p></o:p></span>
+                    </p>
+                    <h1 class="auto-style1">Sistema de Vehiculos</h1>
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
